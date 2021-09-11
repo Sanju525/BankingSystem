@@ -3,7 +3,7 @@ package banking;
 import java.util.Scanner;
 
 public class Account {
-    protected void menu() {
+    private void menu() {
         System.out.println("1. Balance\n" +
                 "2. Add income\n" +
                 "3. Do transfer\n" +
