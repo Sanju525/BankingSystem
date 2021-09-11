@@ -55,7 +55,7 @@ While the algorithm can be used to verify other identification numbers, it is us
 
 Here is how it works for a credit card with the number 4000008449433403:
 
-![Image of Card](https://github.com/Sanju525/BankingSystem/blob/main/card%20copy.jpg)
+![Image of Card](https://github.com/Sanju525/BankingSystem/blob/main/Image.png)
 
 If the received number is divisible by 10 with the remainder equal to zero, then this number is valid; otherwise, the card number is not valid. When registering in your banking system, you should generate cards with numbers that are checked by the Luhn algorithm. You know how to check the card for validity. But how do you generate a card number so that it passes the validation test? It's very simple!
 
