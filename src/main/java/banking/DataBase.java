@@ -5,9 +5,8 @@ import java.sql.*;
 public class DataBase {
     private String url = "jdbc:sqlite:";
 
-    DataBase(String databaseName) {
-        StringBuilder temp = new StringBuilder(url).append(databaseName);
-        url = temp.toString();
+    DataBase(String databasePath) {
+        url = url + databasePath;
         System.out.println("Database URL:" + url);
     }
 
@@ -93,11 +92,7 @@ public class DataBase {
         try (Connection connection = connect();
              Statement statement = connection.createStatement()){
             ResultSet rs = statement.executeQuery(sql);
-            if (rs.next()) {
-                return true;
-            } else {
-                return false;
-            }
+            return rs.next();
         } catch (SQLException throwables) {
             throwables.printStackTrace();
         }
