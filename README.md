@@ -1,6 +1,6 @@
 # BankingSystem
 
-[Banking System wiki](https://github.com/Sanju525/BankingSystem.wiki.git)
+[Banking System wiki](https://github.com/Sanju525/BankingSystem/wiki)
 
 ## Examples
 
